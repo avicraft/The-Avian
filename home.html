@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+        <title>The-Avian</title>
+
+    
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="st.css">
+    </head>
+    <body>
+        <nav class="navbar-inverse my_nav_bar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="logo.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="links"><a onclick="home()">Home</a></li>
+                    <li class="links"><a onclick="downloadb()">Download</a></li>
+                    <li class="links"><a onclick="blog()">Blog</a></li>
+                    <li class="links"><a onclick="mc()">Minecraft</a></li>
+                    <li class="links"><a onclick="srv()">Server</a></li>
+                    <li class="links"><a onclick="my()">Myself</a></li>
+                </ul>
+            </div>
+        </nav>
+        <button id="logout" onclick="logOut()" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>    
+        <center> 
+            <a class="btn btn-primary" href="https://www.youtube.com/channel/UCwjI75QuEwzFLgrYzO4azMA">My Channel</a>
+            <p>My coded apps.</p>
+            <div id="MyCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <center>
+                            <iframe width="352" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/7LW40eL47xo6rQAMsTwBb3I0y5OS5KuI7Eccb3DjvGk/embed?nosource"></iframe>
+                            <div class="carousel-content">
+                                <p>Main app</p>
+                            </div>
+                        </center>
+                    </div>
+    
+                    <div class="item">
+                        <center>
+                            <iframe width="352" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/Mt0ieFs5OFBXzL6EFWfdE3prmcf-DXm6zqZ8s41eXIA/embed"></iframe>
+                            <div class="carousel-content">
+                                <p>Music app</p>
+                            </div>
+                        </center>
+                    </div>
+                   
+                    <div class="item">
+                        <center>
+                            <iframe width="352" height="620" style="border: 0px;" src=""></iframe>
+                            <div class="carousel-content">
+                                <p>Avian-web(coming soon)</p>
+                            </div>
+                        </center>
+                    </div>
+
+                    <div class="item">
+                        <center>
+                            <iframe width="352" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/ab3iEQDewIby5Jfd_6aPFXW5b5sVqwK_xcFXs5EJc7k/embed?nosource"></iframe>
+                            <div class="carousel-content">
+                                <p>Dice app</p>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="item">
+                        <center>
+                            <iframe width="432" height="757" style="border: 0px;" src="https://studio.code.org/projects/gamelab/PAZtVkxZ-qR9fL6rn0iGAv9Vdm-ZRsnC0nu8saJWbBs/embed?nosource"></iframe>
+                            <div class="carousel-content">
+                                <p>Among us app</p>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="item">
+                        <center>
+                            <iframe width="352" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/qvfnuLLREhWCfvsTRYx7uIM84Jf0WZQ5CbEV0GOSwBR/embed?nosource"></iframe>
+                            <div class="carousel-content">
+                                <p>Harry Potter app</p>
+                            </div>
+                        </center>
+                    </div>
+                    <a class="left carousel-control" href="#MyCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#MyCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+    
+            </div>
+            <p>Chatbox</p>
+            <iframe allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/c847f8a8-74f1-41c7-96ad-5f6fc6725f1d">
+            </iframe>
+    
+            <div class="contact_1" id="contact">
+                <h4>Contact</h4>
+                    <a class="btn btn-primary" href="mailto:avicraft231we@gmail.com?Subject=Hello,I am \your name\.\enter your doubt,rating,etc in body\ ">
+                        <i class="fa fa-envelope"></i>&nbsp;&nbsp;<h3>avicrafty8@gmail.com</h3>
+                    </a>
+                </div>
+        </center>
+    </body>
+    <script src="kwitter_room.js"></script>
+</html>

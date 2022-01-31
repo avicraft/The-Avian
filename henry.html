@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+        <title>AvianDownload Henry Stickmin Collection</title>
+
+    
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="st.css">
+    </head>
+    <body>
+        <nav class="navbar-inverse my_nav_bar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">AvianDownload</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="links"><a onclick="home()">Home</a></li>
+                    <li class="links"><a onclick="downloadb()">Download</a></li>
+                    <li class="links"><a onclick="blog()">Blog</a></li>
+    
+                </ul>
+            </div>
+        </nav>
+        <button id="logout" onclick="logOut()" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>    
+        <center> 
+            <li class="list-group-item list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li" >
+                <h4>Henry Stickmin Collection</h4>
+                <img src="folder.jpg" width="100" height="150" >
+                <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12" >The Henry Stickmin Collection is a point-and-click game made by Innersloth, the creators of Among Us. The collection consists of six games: Breaking the Bank, Escaping the Prison, Stealing the Diamond, Infiltrating the Airship, Fleeing the Complex, and Completing the Mission.</p>
+                <br>
+                <a  href="https://www.mediafire.com/file/g6km6vniq2sbzu2/TheHenryStickminCollection.zip/file">Download now</a>
+               </li>  
+        </center>
+    </body>
+    <script src="kwitter_room.js"></script>
+</html>
